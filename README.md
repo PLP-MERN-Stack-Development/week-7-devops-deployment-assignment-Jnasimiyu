@@ -1,78 +1,37 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19956446&assignment_repo_type=AssignmentRepo)
-# Deployment and DevOps for MERN Applications
+# 🐞 MERN Bug Tracker
 
-This assignment focuses on deploying a full MERN stack application to production, implementing CI/CD pipelines, and setting up monitoring for your application.
+A full-stack Bug Tracker application built with the MERN stack (MongoDB, Express.js, React, Node.js), with full deployment, CI/CD, environment management, logging, and monitoring setup.
 
-## Assignment Overview
+## 🚀 Live Demo
 
-You will:
-1. Prepare your MERN application for production deployment
-2. Deploy the backend to a cloud platform
-3. Deploy the frontend to a static hosting service
-4. Set up CI/CD pipelines with GitHub Actions
-5. Implement monitoring and maintenance strategies
+- 🔗 Frontend: [https://your-frontend.netlify.app](https://your-frontend.netlify.app)
+- 🔗 Backend API: [https://your-backend.onrender.com](https://your-backend.onrender.com)
 
-## Getting Started
+## 📦 Features
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week7-Assignment.md` file
-4. Use the provided templates and configuration files as a starting point
+- Create, edit, assign, and manage bug reports
+- View all bugs with filtering by severity, status, etc.
+- MongoDB Atlas database with connection pooling
+- Secure HTTP headers with `helmet`
+- Logging with `morgan`
+- Frontend deployed on **Netlify**
+- Backend deployed on **Render**
+- CI/CD using **GitHub Actions**
+- Monitoring & uptime tracking
 
-## Files Included
+## 🛠️ Tech Stack
 
-- `Week7-Assignment.md`: Detailed assignment instructions
-- `.github/workflows/`: GitHub Actions workflow templates
-- `deployment/`: Deployment configuration files and scripts
-- `.env.example`: Example environment variable templates
-- `monitoring/`: Monitoring configuration examples
+- **Frontend:** React, Tailwind CSS, Axios
+- **Backend:** Node.js, Express.js, MongoDB Atlas, Mongoose
+- **Testing:** Jest, Supertest, React Testing Library, Vitest
+- **Deployment:** Netlify (frontend), Render (backend)
+- **CI/CD:** GitHub Actions
+- **Monitoring:** UptimeRobot, Sentry (optional)
 
-## Requirements
+## 🔧 Environment Variables
 
-- A completed MERN stack application from previous weeks
-- Accounts on the following services:
-  - GitHub
-  - MongoDB Atlas
-  - Render, Railway, or Heroku (for backend)
-  - Vercel, Netlify, or GitHub Pages (for frontend)
-- Basic understanding of CI/CD concepts
-
-## Deployment Platforms
-
-### Backend Deployment Options
-- **Render**: Easy to use, free tier available
-- **Railway**: Developer-friendly, generous free tier
-- **Heroku**: Well-established, extensive documentation
-
-### Frontend Deployment Options
-- **Vercel**: Optimized for React apps, easy integration
-- **Netlify**: Great for static sites, good CI/CD
-- **GitHub Pages**: Free, integrated with GitHub
-
-## CI/CD Pipeline
-
-The assignment includes templates for setting up GitHub Actions workflows:
-- `frontend-ci.yml`: Tests and builds the React application
-- `backend-ci.yml`: Tests the Express.js backend
-- `frontend-cd.yml`: Deploys the frontend to your chosen platform
-- `backend-cd.yml`: Deploys the backend to your chosen platform
-
-## Submission
-
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
-
-1. Complete all deployment tasks
-2. Set up CI/CD pipelines with GitHub Actions
-3. Deploy both frontend and backend to production
-4. Document your deployment process in the README.md
-5. Include screenshots of your CI/CD pipeline in action
-6. Add URLs to your deployed applications
-
-## Resources
-
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
-- [Render Documentation](https://render.com/docs)
-- [Railway Documentation](https://docs.railway.app/)
-- [Vercel Documentation](https://vercel.com/docs)
-- [Netlify Documentation](https://docs.netlify.com/) 
+### Backend (`.env`)
+```env
+PORT=5000
+MONGO_URI=your_mongodb_atlas_uri
+NODE_ENV=production
